@@ -1,0 +1,142 @@
+﻿input {
+	height: 30px;
+	padding: 6px 12px;
+	display: inline-block;	
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+input[type=button], input[type=submit] {
+	  font-size: 1em;
+	  font-weight: 400;
+	  text-align: center;
+	  white-space: nowrap;
+	  vertical-align: middle;
+	  cursor: pointer;
+	  margin-top: -2px;
+      background-color: #dcdcdc;	
+}
+ 
+.main {
+	background: -moz-linear-gradient(top,#f0f0f0 0,#fff 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#f0f0f0),color-stop(100%,#fff));
+	background: -webkit-linear-gradient(top,#f0f0f0 0,#fff 100%);
+	background: linear-gradient(to bottom,#f0f0f0 0,#fff 100%);
+	background-attachment: fixed;	
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+	div.container {
+	  width: 480px;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+	div.container {
+	  width: 720px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	div.container {
+	  width: 960px;
+	}
+}
+
+.container {
+	min-height: 480px;
+	overflow: hidden;
+ 	margin: auto;
+ 	background-color: #FAF0E6;	
+ 	box-shadow: 0 0 4px 1px #bbb;
+}
+
+.body {
+	padding: 50px;
+}
+
+.result {
+	text-align: center;
+}
+
+.align-right {
+	float: right;
+}
+
+.result-image {
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 10px 5px 0px 5px;	
+}
+
+.result-image img {
+	border-radius: 5px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	overflow: hidden;
+	width: 100%;
+	vertical-align: top;
+}
+
+.result-image:after, .result-image:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.result-image:after {
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+ 
+.result-image--selected {
+	opacity: 0.5;
+}
+
+.image {
+    visibility: hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    -webkit-transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.image.visible {
+    visibility: visible;
+    opacity:1;
+    transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    -webkit-transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    transition-delay:0s;
+}
+.image .box {
+    
+    max-width: 640px;
+    min-width:500px;
+    margin: 2% auto;
+    padding:25px;
+    background-color:#FAF0E6;
+    box-shadow: 0px 1px 26px -3px #777777;
+    }
+ 
+
+ 
+ .image .content {
+        display:block;
+        padding:10px 0 0 0px;
+        font-size:18px;
+        line-height:22px;
+        text-align: center;
+}
+
+

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Arbetsprov</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body class="main">
+    <div class="container">
+        <div class="body">
+            <input type="text" id="keyword" class="search-box">
+            <input type="submit" value="Sök" onclick="search(document.getElementById('keyword').value)">
+            <input type="button" id="galleryButton" class="align-right" value="Visa galleri" onclick="showGallery()">
+        </div>     
+        <div id="search_result" class="body result">
+        </div>
+        <div class="image" id="image" onclick="hideImage()">
+            <div class="box">        
+                <p class="title" id="image-title"></p>
+                <div class="content" id="image-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
